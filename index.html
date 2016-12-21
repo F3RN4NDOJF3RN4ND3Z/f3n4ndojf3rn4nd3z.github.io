@@ -7,12 +7,29 @@
     <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
   </head>
   <body>
+     <form>
+       <fieldset>
+          <legend>Selecting elements</legend>
+          <p>
+             <label>Select list</label>
+             <select id = "myList">
+               <option value = "1">one</option>
+               <option value = "2">two</option>
+               <option value = "3">three</option>
+               <option value = "4">four</option>
+             </select>
+          </p>
+       </fieldset>
+    </form>
     <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
+       <a-assets>
+        	<video id="AudiA1" autoplay loop="true" src="video/AudiA1.mp4">
+		<video id="SoulBikes" autoplay loop="true" src="video/Soulbikes.mp4">
+       </a-assets>
+  <!-- Using the asset management system. -->
+  <a-videosphere src="#AudiA1"></a-videosphere>
+  <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
+  <a-videosphere src="video/AudiA1.mp4"></a-videosphere>
     </a-scene>
   </body>
 </html>
