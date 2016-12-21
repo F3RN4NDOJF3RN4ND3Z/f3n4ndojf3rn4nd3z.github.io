@@ -5,6 +5,7 @@
     <title>Hello, World! - A-Frame</title>
     <meta name="description" content="Hello, World! - A-Frame">
     <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
+    <script src="https://rawgit.com/bryik/aframe-bmfont-text-component/master/dist/aframe-bmfont-text-component.min.js"></script>
   </head>
   <body>
      <form>
@@ -23,13 +24,14 @@
     </form>
     <a-scene>
        <a-assets>
-        	<video id="AudiA1" autoplay loop="true" src="video/AudiA1.mp4">
-		<video id="SoulBikes" autoplay loop="true" src="video/Soulbikes.mp4">
+        	<video id="AudiA1" autoplay loop="true" src="videos/AudiA1.mp4">
+		<video id="SoulBikes" autoplay loop="true" src="videos/Soulbikes.mp4">
        </a-assets>
   <!-- Using the asset management system. -->
   <a-videosphere src="#AudiA1"></a-videosphere>
   <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
-  <a-videosphere src="video/AudiA1.mp4"></a-videosphere>
+  <a-videosphere src="videos/AudiA1.mp4"></a-videosphere>
+  <a-entity bmfont-text="text: Hello world"></a-entity>
     </a-scene>
   </body>
 </html>
