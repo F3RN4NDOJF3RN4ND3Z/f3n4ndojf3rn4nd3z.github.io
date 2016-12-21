@@ -29,9 +29,7 @@
        </a-assets>
        <!-- Using the asset management system. -->
        <a-videosphere src="#AudiA1"></a-videosphere>
-       <a-box  width="1" height="0.4" position="0 0 -3" depth="0.0" color="red">
-             <a-entity text="text: What's up" scale="0.2 0.2 0.2" color="blue" position="-0.3 0.01 0"></a-entity>
-       </a-box>
+       <a-entity position="6.63 2.66 -1" rotation="0 0 0" scale="2.92 1.05 0.23" id="refresh-button" geometry="depth:0" material="color:#7ca2f8;visible:true;transparent:true;depthTest:true;side:double;opacity:0.48" bmfont-text="text:Esto es una prueba;color:#fcfcfc;width:10;lineHeight:3;align:center;letterSpacing:1;mode:bold;opacity:1"></a-entity>      
     </a-scene>
     <script>
     document.querySelector('#refresh-button').addEventListener('click', function() {
