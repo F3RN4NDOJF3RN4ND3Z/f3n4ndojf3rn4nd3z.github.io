@@ -27,9 +27,18 @@
         	<video id="AudiA1" autoplay loop="true" src="videos/AudiA1.mp4">
 		<video id="SoulBikes" autoplay loop="true" src="videos/SoulBikes.mp4">
        </a-assets>
-  <!-- Using the asset management system. -->
-  <a-videosphere src="#AudiA1"></a-videosphere>
-  <a-entity bmfont-text="text: Hello world"></a-entity>
+       <!-- Using the asset management system. -->
+       <a-videosphere src="#AudiA1"></a-videosphere>
+       <a-entity id="refresh-button" geometry="primitive: box" material="color: red" position="0 0 -2">
+                <a-entity text="text: What's up" scale="0.2 0.2 0.2" color="blue" position="-0.3 0.01 0"> </a-entity>	
+       </a-entity>
+       <!--a-entity bmfont-text="text: Hello world"></a-entity-->
     </a-scene>
+    <script>
+    document.querySelector('#refresh-button').addEventListener('click', function() {
+        // Refresh stuff would go here!
+	alert('Button Clicked');
+    });
+    </script>
   </body>
 </html>
